@@ -87,11 +87,11 @@ This approach offers the following advantages:
      ```bash
           /etc/init.d/dockerd stop
      ```
-2. Copy actual docker data root folder to sd card.
+5. Copy actual docker data root folder to sd card.
      ```bash
      cp -r /home/docker /media/sd/
      ```
- 3. Edit daemon.json and change docker "data-root" entry. 
+6. Edit daemon.json and change docker "data-root" entry. 
      ```bash
      vi /etc/docker/daemon.json or nano /etc/docker/daemon.json
      ```
@@ -100,11 +100,11 @@ This approach offers the following advantages:
      alt="daemon.json"/>
 </div>
 
-4. Start docker daemon.
+7. Start docker daemon.
      ```bash
      /etc/init.d/dockerd start
      ```
- 5. Check docker functionality.
+8. Check docker functionality.
 
      ```bash
      docker info
